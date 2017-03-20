@@ -45,7 +45,7 @@ func getContentBytes(document Document) ([]byte, error) {
 }
 
 func getDocument(documentId string) (Document, error) {
-	url := "http://127.0.0.1:8080/documents/" + documentId
+	url := "http://ec2-54-190-25-232.us-west-2.compute.amazonaws.com:8080/documents/" + documentId
 	response, err := http.Get(url)
 	if err != nil {
 		fmt.Println("Did not get any response.")
