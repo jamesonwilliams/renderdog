@@ -7,3 +7,8 @@ aws ecs run-task \
     --task-definition 'renderdog:1' \
     --count 1 
 
+aws ecs create-service \
+    --service-name renderdog \
+    --task-definition 'renderdog:1' \
+    --desired-count 1 
+

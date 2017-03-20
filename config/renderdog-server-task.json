@@ -4,11 +4,11 @@
       {
          "environment" : [
             {
-               "value" : "<SECRET_STUFF>",
+               "value" : "",
                "name" : "AWS_ACCESS_KEY_ID"
             },
             {
-               "value" : "<SUPER_SECRET_STUFF",
+               "value" : "",
                "name" : "AWS_SECRET_ACCESS_KEY"
             },
             {
@@ -16,14 +16,14 @@
                "name" : "AWS_REGION"
             }
          ],
-         "memory" : 384,
+         "memory" : 100,
          "name" : "renderdog",
          "image" : "jamesonwilliams/renderdog",
          "essential" : true,
          "portMappings" : [
             {
-               "hostPort" : 8000,
-               "containerPort" : 8000,
+               "hostPort" : 8888,
+               "containerPort" : 8888,
                "protocol" : "tcp"
             }
          ]
